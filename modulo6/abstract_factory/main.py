@@ -1,13 +1,15 @@
 from abstract_factory.fabrica import Fabrica
+from abstract_factory.mesa.mesa import Mesa
+from abstract_factory.silla.silla import Silla
 from abstract_factory.fabrica_barroca import FabricaBarroca
-from abstract_factory.fabrica_moderna import FabricaModerna
+from abstract_factory.fabrica_gotica import FabricaGotica
 
 
 def client(abstract: Fabrica):
-    mesa = abstract.crearMesa()
+    mesa: Mesa = abstract.crearMesa()
     print(mesa.comer())
 
-    silla = abstract.crearSilla()
+    silla: Silla = abstract.crearSilla()
     print(silla.sentarse())
 
     precio = silla.get_precio() + mesa.get_precio()
@@ -18,4 +20,4 @@ def client(abstract: Fabrica):
 if __name__ == '__main__':
     client(FabricaBarroca())
 
-    client(FabricaModerna())
+    client(FabricaGotica())

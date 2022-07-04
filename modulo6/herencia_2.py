@@ -13,11 +13,11 @@ class Sub(Super):
         self.subVar = 3
 
 
-class Sub2(Super):
+class Sub2(Sub):
     def __init__(self, nombre):
         Super.__init__(self, nombre)
         self.supVar = 9
-        self.subvar = 10
+        self.subVar = 10
 
 
 obj = Sub("Andy")
@@ -32,4 +32,4 @@ print(obj.subVar)
 # Las propiedades las busca primero en el objeto y luego en las superclases
 
 print(obj2.supVar)
-print(obj2.subvar)
+print(obj2.subVar)

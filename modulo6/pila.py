@@ -33,4 +33,7 @@ if __name__ == '__main__':
     suma_pila.push(3)
     suma_pila.push(2)
     suma_pila.push(1)
-    print(suma_pila.__getattribute__('__sum'))
+    print(suma_pila._Pila__listaPila)
+    suma_pila.__otra_lista = []
+
+

@@ -1,13 +1,15 @@
 # constructor
 class conClase:
-    def __init__(self, valor = None):
+    def __init__(self, valor=None):
         self.var = valor
+
 
 obj1 = conClase("objeto")
 obj2 = conClase()
 
 print(obj1.var)
 print(obj2.var)
+
 
 # métodos privados
 class conClase:
@@ -23,7 +25,7 @@ obj.visible()
 
 try:
     obj.__oculto()
-except:
+except AttributeError:
     print("fallido")
 
 obj._conClase__oculto()

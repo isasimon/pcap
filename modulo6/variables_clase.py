@@ -19,3 +19,6 @@ print(objetoEjemplo3.__dict__, objetoEjemplo3.contador)
 # Su valor es común a todos los objetos
 
 print(ClaseEjemplo.__dict__)
+print(ClaseEjemplo.__name__)
+
+print(int.__base__)
