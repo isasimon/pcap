@@ -18,6 +18,6 @@ def client(abstract: Fabrica):
 
 
 if __name__ == '__main__':
+    fabrica_dictionary = {"barroco": FabricaBarroca()}
     client(FabricaBarroca())
-
     client(FabricaGotica())

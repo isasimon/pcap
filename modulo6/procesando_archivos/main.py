@@ -77,8 +77,11 @@ def write_something(file):
 
 
 if __name__ == '__main__':
-    # read_txt("tzop.txt")
-    read_each_character("text.txt")
-    read_each_line("text.txt")
-    open_file_as_iterable("text.txt")
-    write_something("write_text.txt")
+    def I(n):
+        s = ''
+        for i in range(n):
+            s += '*'
+            yield s
+
+    for x in I(3):
+        print(x, end='')

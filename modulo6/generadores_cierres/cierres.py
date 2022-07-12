@@ -1,7 +1,7 @@
 # Ejemplo erroneo
-
 def exterior(par):
     loc = par
+
 
 var = 1
 exterior(var)
@@ -32,3 +32,7 @@ def crearcierre(par):
     def potencia(p):
         return p ** loc
     return potencia
+
+
+sqr = crearcierre(2)
+cube = crearcierre(3)
